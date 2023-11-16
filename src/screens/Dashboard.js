@@ -1,12 +1,12 @@
-import { StyleSheet, Text, Touchable, TouchableOpacity, View } from 'react-native'
 import React from 'react'
+import { StyleSheet, Text, Touchable, TouchableOpacity, View } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
 
 const Dashboard = () => {
     const navigation = useNavigation()
 
   return (
-    <TouchableOpacity onPress={() => navigation.goBack }>
+    <TouchableOpacity onPress={() => navigation.navigate("Details") }>
     <Text
      style={{
        fontSize: 20,
@@ -14,7 +14,7 @@ const Dashboard = () => {
        padding: 20,
        backgroundColor: '#b3ecec',
      }}>
-     Screen 1
+     Details
    </Text>
  </TouchableOpacity>
   )

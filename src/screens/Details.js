@@ -16,7 +16,7 @@ const navigation = useNavigation()
               padding: 20,
               backgroundColor: '#b3ecec',
             }}>
-            Screen 1
+            Page 1
           </Text>
         </TouchableOpacity>
 
@@ -28,7 +28,7 @@ const navigation = useNavigation()
               padding: 20,
               backgroundColor: '#b3ecec',
             }}>
-            Screen 2
+            Page 2
           </Text>
         </TouchableOpacity>
       </View>
