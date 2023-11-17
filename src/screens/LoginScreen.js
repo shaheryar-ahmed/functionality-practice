@@ -7,7 +7,8 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import React, {useState} from 'react';
-import {useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
+
 
 
 const LoginScreen = () => {
@@ -126,8 +127,8 @@ const LoginScreen = () => {
       </View>
 
       <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'center'}}>
-        <Text style={{color: '#BAC2CB', fontSize: 16, fontWeight: '900'}}>Didn't have an account?</Text>
-        <TouchableOpacity>
+        <Text style={{color: '#BAC2CB', fontSize: 16, fontWeight: '900'}}>Didn't have an account? </Text>
+        <TouchableOpacity onPress={() => navigation.navigate("RegisterScreen") }>
         <Text style={{color: '#5468FF', fontSize: 16, fontWeight: '900'}}>Register Now</Text>
         </TouchableOpacity>
       </View>
